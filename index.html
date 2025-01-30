@@ -13,14 +13,82 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <!-- font awesome icon -->
+  <script src="https://kit.fontawesome.com/ee0674c127.js" crossorigin="anonymous"></script>
   <style type="text/tailwindcss">
     @theme {
       --font-sora:Sora, serif;
       --font-adlam:ADLaM Display, serif;
+      --color-first:#FFDC26;
     }
-  </style>
+  </style>  
 </head>
-<body>
+<body class="font-sora max-w-[1280px] m-auto border border-[red]">
+  <!-- Header Section -->
+   <header class="w-10/12 m-auto">
+     <!-- Navbar -->
+      <nav>
+        <div class="navbar flex justify-between bg-[#FFF9F4] ">
+          <!-- 1 -->
+          <div class="">              
+            <img src="./assets/logo-header.png" alt="">
+            <div>
+              <a class="text-2xl hidden sm:flex">Browse 
+                <span class="text-first">4</span> Pets</a>
+            </div>
+          </div>        
+          <!-- 2 -->
+          <div class="navbar-center hidden lg:flex"> 
+            <ul class="menu menu-horizontal px-1">              
+              <li><a class="text-xl">Find a pet</a></li>
+              <li><a class="text-xl">Breeds</a></li>
+              <li><a class="text-xl">Contact us</a></li>
+            </ul>
+          </div>
+          <!-- Dropdown -->
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost text-5xl md:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-14 w-14"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>           
+          </div>
+          <!-- 3 -->
+          <div class=" hidden flex justify-end md:flex space-x-2">
+            <i class="fa-regular fa-bell text-2xl"></i>
+            <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+            <a class="btn border-[#ffdc26]">Login</a>
+            <a class="btn bg-[#FFDC26]">Register</a>
+          </div>          
+        </div>
+      </nav>
+      <div class="sm:hidden"><hr></div>
+      <!-- banner Section  -->    
 
+
+
+       <div class="mt-[30px] md:h-[750px]">
+        <section class="bg-[url('./assets/cat-big.png')] bg-no-repeat md:bg-contain bg-center md:h-full h-[500px] bg-contain bg-bottom  ">
+          <div class="w-full md:w-6/12 space-y-6 md:pt-[100px]" >
+            <h1 class="text-3xl md:text-5xl font-adlam ">Pamper Your Pet, Because They Deserve  the Bes</h1>
+            <p class="text-sm md:text-base">Discover a world of treats, toys, and essentials handpicked for  your furry friends. Shop now and make tails wag with joy!</p>
+            <button class="btn bg-[#ffdc26]">Find a pet</button>          
+          </div>
+          <!-- <img class="" src="./assets/cat-big.png" alt=""> -->
+         </section>
+       </div>
+        
+        
+
+   </header>
 </body>
 </html>
