@@ -21,12 +21,10 @@
       --font-adlam:ADLaM Display, serif;
       --color-first:#FFDC26;
     }
-    *{
-      /* border: 1px solid green; */
-    }
+    
   </style>  
 </head>
-<body class="font-sora max-w-[1280px] m-auto border">
+<body class="font-sora max-w-[1280px] m-auto border ">
   <!-- Header Section -->
    <header class="w-10/12 m-auto">
      <!-- Navbar -->
@@ -73,8 +71,7 @@
             <a class="btn bg-[#FFDC26]">Register</a>
           </div>          
         </div>
-      </nav>
-      <div class="sm:hidden"><hr></div>
+      </nav>      
       <!-- banner Section  -->   
        <section class="mt-[30px] md:h-[750px]">
         <div class="bg-[url('./assets/cat-big.png')] bg-no-repeat md:bg-contain bg-center md:h-full h-[500px] bg-contain bg-bottom  ">
@@ -89,8 +86,23 @@
    </header>
    <!-- Main Section -->
    <main class="">
+    <!-- Pet Cat shop -->
+     <section class="w-10/12 m-auto mb-[30px]">
+         <div class="flex  justify-center items-center flex-col md:flex-row ">
+          <div class="space-y-10 mb-5">
+            <h1 class="font-adlam text-5xl">Enjoy 5% Off</h1>
+            <p class="text-xl">Are you a new user? Join today and enjoy
+              Flat 5% Discount on your 1st order.
+              For a limited time!</p>
+              <button class="btn bg-[#FFDC26]">Pick up</button>
+           </div>
+           <div>
+            <img src="./assets/pet-shop.webp" alt="">
+           </div>
+         </div>
+     </section>
     <!-- Categories Section -->
-     <section class="w-10/12 m-auto mb-52">
+     <section class="w-10/12 m-auto">
       <h1 class="font-adlam text-2xl mb-8 md:text-4xl md:mb-12">Browse By Categories</h1>
       <!-- Card  -->
       <div class="flex justify-around flex-wrap gap-y-4">        
@@ -134,7 +146,7 @@
      </section>
      <!-- Pet Product Section -->
      <section class="bg-[#FFF9F4]">
-      <div class="w-11/12 m-auto mb-52">
+      <div class="w-11/12 m-auto mb-[30px]">
         <h1 class="font-adlam text-2xl mb-8 mt-12 md:mt-32 md:text-4xl md:mb-12 pl-13 lg:pl-20">Trending Pet Products</h1>
         <div class=" flex flex-col justify-center items-center md:items-start md:flex-row md:justify-evenly gap-5 md:gap-0">
           <!-- img -->
@@ -229,7 +241,7 @@
       </div>
      </section>
      <!-- Price Section -->
-      <section class="w-10/12 m-auto mb-28">
+      <section class="w-10/12 m-auto">
         <h1 class="font-adlam text-2xl mb-8 mt-12 md:mt-32 md:text-4xl md:mb-12 pl-13 lg:pl-20">Everyday low Price</h1>
         <div class="flex flex-col sm:flex-row ">
            <!-- price card 1 -->          
@@ -259,7 +271,49 @@
           </div>
         </div>
         </div>
-      </section>
-   </main>
+      </section>   
+    <!-- Pawsome News section -->
+      <section class="w-10/12 m-auto bg-[#FFF9F4] relative top-40" >        
+          <div class="flex sm:justify-center sm:items-center flex-col sm:flex-row gap-15">
+            <img
+              src="./assets/cute-pet-small.png"
+              class="" />
+            <div class="text-center sm:text-left">
+              <h1 class="text-3xl font-bold pt-20 pb-2">Get Pawsome News!</h1>
+              <p class="text-base">
+                Exclusive training tips, ticks, product deals and more.
+              </p>
+              <input class="p-2 shadow-2xl mt-6 mb-6" type="email" name="email" id="email" placeholder="Enter email...."><br>
+              <button class="btn bg-[#ffdc26]">Subscribe</button>
+            </div>
+          </div>
+        </section>
+   </main>      
+       
+   <footer class="bg-[#FFDC2680] pb-[140px] pt-[300px]">
+       <div class="w-10/12 m-auto grid sm:grid-cols-3">
+        <div class="space-y-7">
+          <div class="flex items-center gap-3">
+           <img src="./assets/logo-footer.png" alt="">
+           <h1 class="text-2xl">Browse <span class="text-[#FFDC26]">4</span>Pets</h1>
+          </div>
+          <p class="text-lg">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+        </div>
+        <ul class="flex flex-col justify-end sm:items-center text-xl">
+           <li class="pt-7 sm:pt-0"><a href="">Find a pet</a></li>
+           <li  class="pt-4 pb-4 sm:pt-8 sm:pb-8 "><a href="">Breeds</a></li>
+           <li class="pb-7 sm:pb-0"><a href="">Contact us</a></li>
+        </ul>
+        <div class="flex flex-col justify-end sm:items-end">
+         <h5 class="text-xl">Follow Us</h5>
+         <div class="text-xl">
+           <i class="fa-brands fa-facebook  p-2"></i>
+           <i class="fa-brands fa-instagram p-2"></i>
+           <i class="fa-brands fa-linkedin p-2"></i>
+           <i class="fa-brands fa-youtube p-2"></i>
+         </div>
+        </div>
+       </div>
+   </footer>
 </body>
 </html>
