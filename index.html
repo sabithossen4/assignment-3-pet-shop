@@ -21,16 +21,25 @@
       --font-adlam:ADLaM Display, serif;
       --color-first:#FFDC26;
     }
-    *{
-      border: 1px solid green;
-    }
+    
     .a{      
       background-image: linear-gradient( to right,#F8CCFB,#ACCEFD);
     }
+    @keyframes fadeLoop {
+        0% { opacity: 0; transform: translateY(20px); }
+        50% { opacity: 1; transform: translateY(0); }
+        100% { opacity: 0; transform: translateY(-20px); }
+      }
+      .title {
+        animation: fadeLoop 4s infinite;
+      }
+      .description {
+        animation: fadeLoop 4s infinite 1s;
+      }
     
   </style>  
 </head>
-<body class="font-sora max-w-[1280px] m-auto border border-red-400 border-dashed ">
+<body class="font-sora max-w-[1280px] m-auto">
   <!-- Header Section -->
    <header class="w-11/12 m-auto">
      <!-- Navbar -->
@@ -82,8 +91,8 @@
        <section class="mt-[30px] md:h-[750px]">
         <div class="bg-[url('./assets/cat-big.png')] bg-no-repeat md:bg-contain bg-center md:h-full h-[500px] bg-contain bg-bottom  ">
           <div class="w-full md:w-6/12 space-y-6 md:pt-[100px]" >
-            <h1 class="text-3xl md:text-5xl font-adlam ">Pamper Your Pet, Because They Deserve  the Bes</h1>
-            <p class="text-sm md:text-base">Discover a world of treats, toys, and essentials handpicked for  your furry friends. Shop now and make tails wag with joy!</p>
+            <h1 class="text-3xl md:text-5xl font-adlam title">Pamper Your Pet, Because They Deserve  the Bes</h1>
+            <p class="text-sm md:text-base description">Discover a world of treats, toys, and essentials handpicked for  your furry friends. Shop now and make tails wag with joy!</p>
             <button class="btn bg-[#ffdc26]">Find a pet</button>          
           </div>
           <!-- <img class="" src="./assets/cat-big.png" alt=""> -->
