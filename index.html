@@ -21,15 +21,18 @@
       --font-adlam:ADLaM Display, serif;
       --color-first:#FFDC26;
     }
+    *{
+      border: 1px solid green;
+    }
     .a{      
       background-image: linear-gradient( to right,#F8CCFB,#ACCEFD);
     }
     
   </style>  
 </head>
-<body class="font-sora max-w-[1280px] m-auto border ">
+<body class="font-sora max-w-[1280px] m-auto border border-red-400 border-dashed ">
   <!-- Header Section -->
-   <header class="w-10/12 m-auto">
+   <header class="w-11/12 m-auto">
      <!-- Navbar -->
       <nav>
         <div class="navbar flex justify-between bg-[#FFF9F4] ">
@@ -90,7 +93,7 @@
    <!-- Main Section -->
    <main class="">
     <!-- Pet Cat shop -->
-     <section class="w-10/12 m-auto mb-[30px]">
+     <section class="w-11/12 m-auto mb-[30px]">
          <div class="flex  justify-center items-center flex-col md:flex-row ">
           <div class="space-y-10 mb-5">
             <h1 class="font-adlam text-5xl">Enjoy 5% Off</h1>
@@ -105,7 +108,7 @@
          </div>
      </section>
     <!-- Categories Section -->
-     <section class="w-10/12 m-auto">
+     <section class="w-11/12 m-auto">
       <h1 class="font-adlam text-2xl mb-8 md:text-4xl md:mb-12">Browse By Categories</h1>
       <!-- Card  -->
       <div class="flex justify-around flex-wrap lg:flex-nowrap gap-y-4">        
@@ -207,7 +210,7 @@
                 <p>$39.99</p>
               </div>
             </div>
-            <div class="bg-[#FFFFFF] flex items-center justify-center gap-5 w-[150px] h-24  rounded-xl md:invisible lg:visible">
+            <div class="bg-[#FFFFFF] flex items-center justify-center gap-5 w-[150px] h-24  rounded-xl md:hidden lg:flex">
               <img class="w-12 h-12 " src="./assets/dog-cartoon.png" alt="">
               <div>
                 <p class="flex gap-3"><img class="w-5 h-5"  src="./icon/rating.svg" alt="">4.5</p>
@@ -215,7 +218,7 @@
                 <p>$39.99</p>
               </div>
             </div>
-            <div class="bg-[#FFFFFF] flex items-center justify-center gap-5 w-[150px] h-24  rounded-xl md:invisible lg:visible">
+            <div class="bg-[#FFFFFF] flex items-center justify-center gap-5 w-[150px] h-24  rounded-xl md:hidden lg:flex">
               <img class="w-12 h-12 " src="./assets/bird-cartoon.png" alt="">
               <div>
                 <p class="flex gap-3"><img class="w-5 h-5"  src="./icon/rating.svg" alt="">4.5</p>
@@ -223,7 +226,7 @@
                 <p>$39.99</p>
               </div>
             </div>
-            <div class="bg-[#FFFFFF] flex items-center justify-center gap-5 w-[150px] h-24  rounded-xl invisible lg:visible ">
+            <div class="bg-[#FFFFFF] flex items-center justify-center gap-5 w-[150px] h-24  rounded-xl hidden lg:flex ">
               <img class="w-12 h-12 " src="./assets/pet-couch.png" alt="">
               <div>
                 <p class="flex gap-3"><img class="w-5 h-5"  src="./icon/rating.svg" alt="">4.5</p>
@@ -238,7 +241,7 @@
       </div>
      </section>
      <!-- Price Section -->
-      <section class="w-10/12 m-auto mb-[400px] sm:mb-44">
+      <section class="w-11/12 m-auto mb-[400px] sm:mb-44">
         <h1 class="font-adlam text-2xl mb-8 mt-12 md:mt-32 md:text-4xl md:mb-12 pl-13 lg:pl-20">Everyday low Price</h1>
         <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 ">
            <!-- price card 1 -->          
@@ -261,7 +264,7 @@
           <div class="bg-[#F9DF8A] sm:w-4/10  relative">
             <div class="space-y-4 pl-7 relative top-16">
               <h1 class="font-adlam text-3xl text-black">T-Shirt For Dogs</h1>
-              <p class="font-adlam text-2xl">$7.99</p>              
+              <p class="font-adlam text-2xl text-[#FFDC26]">$7.99</p>              
             </div >
             <div class="flex justify-end">
             <img class=""  src="./assets/cute-pet-mid.png" alt="">
@@ -269,14 +272,11 @@
         </div>
         </div>
       </section>  
-    </main>   
-    
-       
-       
+    </main>           
    <div class="relative ">
     <!-- Pawsome News section -->
-    <div class="w-10/12 m-auto">
-      <section class="w-10/12 m-auto bg-[#FFF9F4] absolute sm:-top-40 -top-[400px]" >        
+    <section class="w-11/12 m-auto">
+      <div class="w-11/12 m-auto bg-[#FFF9F4] absolute sm:-top-40 -top-[400px]" >        
         <div class="flex justify-center items-center flex-col sm:flex-row sm:gap-15">
           <img
             src="./assets/cute-pet-small.png"
@@ -290,10 +290,10 @@
             <button class="btn bg-[#ffdc26] mb-5 sm:mb-0">Subscribe</button>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
     <footer class="bg-[#FFDC2680] pb-[140px] pt-[300px] ">
-      <div class="w-10/12 m-auto grid sm:grid-cols-3">
+      <div class="w-11/12 m-auto grid sm:grid-cols-3">
        <div class="space-y-7">
          <div class="flex items-center gap-3">
           <img src="./assets/logo-footer.png" alt="">
